@@ -9,6 +9,7 @@ import ParticleCanvas from '@/components/effects/ParticleCanvas';
 import CursorTrail from '@/components/effects/CursorTrail';
 import KittyCompanion from '@/components/kitty/KittyCompanion';
 import AchievementToast from '@/components/ui/AchievementToast';
+import BackgroundMusic from '@/components/audio/BackgroundMusic';
 import { ACHIEVEMENTS } from '@/lib/constants';
 import type { Achievement } from '@/types';
 
@@ -76,6 +77,7 @@ export default function Home() {
       )}
 
       <AchievementToast achievement={toastAchievement} />
+      <BackgroundMusic />
     </main>
   );
 }
